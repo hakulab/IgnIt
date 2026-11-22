@@ -12,13 +12,7 @@
     # Following kiln's nixpkgs keeps the kiln package identical to its Cachix build.
     nixpkgs.follows = "kiln/nixpkgs";
 
-    kiln = {
-      url = "github:hakula139/kiln/v0.5.2";
-      inputs = {
-        git-hooks-nix.follows = "devkit/git-hooks-nix";
-        kiln-tailwindcss.inputs.git-hooks-nix.follows = "devkit/git-hooks-nix";
-      };
-    };
+    kiln.url = "github:hakulab/kiln/v1.0.0";
 
     devkit = {
       url = "github:hakulab/devkit/v3";

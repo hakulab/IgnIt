@@ -40,11 +40,11 @@ For site-wide overrides, import IgnIt's entry before your own rules:
 @import '../../../themes/IgnIt/assets/css/_src/style.css';
 ```
 
-Put that entry at `assets/css/_src/style.css` in the site. For page-specific rules, use the same path within the page bundle. See [kiln's stylesheet guide](https://github.com/hakula139/kiln/blob/main/docs/assets.md#stylesheet-sources) for compilation, Tailwind setup, and asset URLs.
+Put that entry at `assets/css/_src/style.css` in the site. For page-specific rules, use the same path within the page bundle. See [kiln's stylesheet guide](https://github.com/hakulab/kiln/blob/main/docs/assets.md#stylesheet-sources) for compilation, Tailwind setup, and asset URLs.
 
 ## Template Overrides
 
-kiln's [override model](https://github.com/hakula139/kiln/blob/main/docs/themes.md#override-model) resolves templates from your site's `templates/` directory before falling back to the theme's. Drop a same-named file into your site to replace any IgnIt template, such as `base.html`, a partial under `_partials/`, or a directive under `directives/`.
+kiln's [override model](https://github.com/hakulab/kiln/blob/main/docs/themes.md#override-model) resolves templates from your site's `templates/` directory before falling back to the theme's. Drop a same-named file into your site to replace any IgnIt template, such as `base.html`, a partial under `_partials/`, or a directive under `directives/`.
 
 ```text
 my-site/templates/
@@ -116,7 +116,7 @@ In the header menus, the theme's CSS aligns FA and SVG icons to the same horizon
 
 ## i18n Overrides
 
-Site translations layer on top of theme translations per [kiln's i18n model](https://github.com/hakula139/kiln/blob/main/docs/themes.md#internationalization). The full list of keys IgnIt ships is documented in [i18n](i18n.md).
+Site translations layer on top of theme translations per [kiln's i18n model](https://github.com/hakulab/kiln/blob/main/docs/themes.md#internationalization). The full list of keys IgnIt ships is documented in [i18n](i18n.md).
 
 To translate the theme into a language IgnIt doesn't ship, place a complete `i18n/<lang>.toml` in your site. To override individual strings in a language IgnIt already supports, ship just the keys you want to change. Everything else falls through to the theme's translation.
 
@@ -180,4 +180,4 @@ IgnIt ships no favicon, touch icon, or web manifest. To link your own, put the f
 
 The leading comment ends with `#}`, which keeps the newline after it, so the indented links start on their own line when the output is not minified.
 
-See [kiln's publication rules](https://github.com/hakula139/kiln/blob/main/docs/assets.md#public-files) for the `static/` layout and precedence. kiln generates `robots.txt` and `sitemap.xml` itself, so a static file at either path fails the build with a route collision.
+See [kiln's publication rules](https://github.com/hakulab/kiln/blob/main/docs/assets.md#public-files) for the `static/` layout and precedence. kiln generates `robots.txt` and `sitemap.xml` itself, so a static file at either path fails the build with a route collision.

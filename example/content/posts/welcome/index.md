@@ -7,7 +7,7 @@ This preview uses IgnIt's shared stylesheet and templates.
 
 ## Typography
 
-A paragraph with **bold text**, _emphasis_, `inline code`, and a [link to kiln](https://github.com/hakula139/kiln).
+A paragraph with **bold text**, _emphasis_, `inline code`, and a [link to kiln](https://github.com/hakulab/kiln).
 
 > A block quotation keeps longer excerpts distinct from surrounding prose.
 

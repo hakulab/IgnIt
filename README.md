@@ -1,10 +1,10 @@
 # IgnIt
 
-[![CI](https://github.com/hakula139/IgnIt/actions/workflows/ci.yml/badge.svg)](https://github.com/hakula139/IgnIt/actions/workflows/ci.yml)
+[![CI](https://github.com/hakulab/IgnIt/actions/workflows/ci.yml/badge.svg)](https://github.com/hakulab/IgnIt/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![WakaTime coding time for IgnIt](https://wakatime.com/badge/user/f4a35a1f-0e29-4093-a647-e66aad164737/project/662307e9-d5bf-4e61-adc7-f900b9a95543.svg)
 
-A theme for [kiln](https://github.com/hakula139/kiln) built with Tailwind CSS and MiniJinja, inspired by Hugo [LoveIt](https://github.com/dillonzq/LoveIt).
+A theme for [kiln](https://github.com/hakulab/kiln) built with Tailwind CSS and MiniJinja, inspired by Hugo [LoveIt](https://github.com/dillonzq/LoveIt).
 
 ## Highlights
 
@@ -41,7 +41,7 @@ A theme for [kiln](https://github.com/hakula139/kiln) built with Tailwind CSS an
 Add IgnIt to your kiln site as a Git submodule:
 
 ```bash
-git submodule add https://github.com/hakula139/IgnIt.git themes/IgnIt
+git submodule add https://github.com/hakulab/IgnIt.git themes/IgnIt
 ```
 
 Then set it in your `config.toml`:
@@ -50,7 +50,7 @@ Then set it in your `config.toml`:
 theme = "IgnIt"
 ```
 
-Run `kiln build` or `kiln serve` to build your site. See [kiln's processor setup](https://github.com/hakula139/kiln/blob/main/docs/assets.md#processor-setup) for Tailwind installation requirements.
+Run `kiln build` or `kiln serve` to build your site. See [kiln's processor setup](https://github.com/hakulab/kiln/blob/main/docs/assets.md#processor-setup) for Tailwind installation requirements.
 
 ## Quick Start
 
@@ -81,7 +81,7 @@ external = true
 
 ## Theme Development
 
-See [kiln's assets guide](https://github.com/hakula139/kiln/blob/main/docs/assets.md) for source layout and publication rules.
+See [kiln's assets guide](https://github.com/hakulab/kiln/blob/main/docs/assets.md) for source layout and publication rules.
 
 The `example/` site references this checkout and provides a local preview:
 

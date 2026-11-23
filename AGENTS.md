@@ -1,10 +1,10 @@
 # AGENTS.md: IgnIt
 
-IgnIt supplies MiniJinja templates, Tailwind CSS, and JavaScript to [kiln](https://github.com/hakula139/kiln) sites. Keep user-facing configuration guidance in [README.md](README.md) and [docs/](docs/). Check the theme contract and its consuming site when changing a shared template.
+IgnIt supplies MiniJinja templates, Tailwind CSS, and JavaScript to [kiln](https://github.com/hakulab/kiln) sites. Keep user-facing configuration guidance in [README.md](README.md) and [docs/](docs/). Check the theme contract and its consuming site when changing a shared template.
 
 ## Theme inputs and output
 
-Follow [kiln's asset and stylesheet contracts](https://github.com/hakula139/kiln/blob/main/docs/assets.md). Preserve handwritten source comments.
+Follow [kiln's asset and stylesheet contracts](https://github.com/hakulab/kiln/blob/main/docs/assets.md). Preserve handwritten source comments.
 
 Keep CSS rules in the partial for their concern. Use semantic component classes for repeated patterns and Tailwind utilities for small layout or responsive adjustments in templates. Define shared tokens in `tokens.css` under `@theme`, with dark values under `[data-theme='dark']`. Rules that override `prose` typography or third-party styles stay unlayered. `print.css` must remain unlayered to take precedence when printing. Use Tailwind v4 utility names and trailing `!` for important utilities in `@apply`.
 
@@ -14,7 +14,7 @@ Maple Mono's variable font needs the `calt` feature setting in `tokens.css` for 
 
 Shared fragments belong in `templates/_partials/` and are included by path. Use `{%-` to trim whitespace before template tags while preserving HTML indentation. Use `-%}` only where trailing whitespace must be removed. Wrap attributes one per line when an opening tag becomes long. kiln's autoescaping leaves `/` intact, so never `| safe` a URL. Use `| safe` only for generated HTML (renderer output and template-built markup). Leave ordinary text escaped.
 
-Wrap featured and background images in `.lqip` when `lqip_uri` exists. Follow [kiln's image rendering contract](https://github.com/hakula139/kiln/blob/main/docs/themes.md#image-rendering) when changing loading behavior.
+Wrap featured and background images in `.lqip` when `lqip_uri` exists. Follow [kiln's image rendering contract](https://github.com/hakulab/kiln/blob/main/docs/themes.md#image-rendering) when changing loading behavior.
 
 ## Dependencies
 

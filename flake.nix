@@ -12,7 +12,7 @@
     # Following kiln's nixpkgs keeps the kiln package identical to its Cachix build.
     nixpkgs.follows = "kiln/nixpkgs";
 
-    kiln.url = "github:hakulab/kiln/v1.0.0";
+    kiln.url = "github:hakulab/kiln/v1.0.1";
 
     devkit = {
       url = "github:hakulab/devkit/v3";
